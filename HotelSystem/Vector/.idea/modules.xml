@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Vector.iml" filepath="$PROJECT_DIR$/Vector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VectorClient/VectorClient.iml" filepath="$PROJECT_DIR$/VectorClient/VectorClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VectorServer/VectorServer.iml" filepath="$PROJECT_DIR$/VectorServer/VectorServer.iml" />
+    </modules>
+  </component>
+</project>

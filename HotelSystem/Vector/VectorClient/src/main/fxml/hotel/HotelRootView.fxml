@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1000.0" stylesheets="@../css/RootView.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.view.hotel.HotelRootView">
+   <children>
+      <SplitPane dividerPositions="0.5" prefHeight="750.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane id="guide-pane" maxWidth="-Infinity" minHeight="0.0" minWidth="-Infinity" prefHeight="700.0" prefWidth="150.0">
+               <children>
+                  <GridPane prefHeight="748.0" prefWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="250.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="0.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="424.0" minHeight="10.0" prefHeight="194.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <VBox GridPane.rowIndex="1">
+                           <children>
+                              <ToggleButton id="hotel-info" fx:id="modifyInfo_btn" mnemonicParsing="false" onAction="#handleMissionSwitch" styleClass="left-guide-button" />
+                              <ToggleButton id="hotel-order" fx:id="order_btn" mnemonicParsing="false" onAction="#handleMissionSwitch" prefHeight="23.0" prefWidth="254.0" styleClass="left-guide-button" />
+                              <ToggleButton id="hotel-room" fx:id="roomUpdate_btn" mnemonicParsing="false" onAction="#handleMissionSwitch" prefHeight="23.0" prefWidth="252.0" styleClass="left-guide-button" />
+                              <ToggleButton id="promotion-list" fx:id="promotion_btn" mnemonicParsing="false" onAction="#handleMissionSwitch" styleClass="left-guide-button" />
+                           </children></VBox>
+                        <Button id="exit-btn" fx:id="exit_btn" mnemonicParsing="false" onAction="#handleExit" styleClass="left-guide-button" GridPane.rowIndex="2" />
+                        <Button id="logo-btn" fx:id="logo_btn" mnemonicParsing="false" onAction="#handleMissionSwitch" />
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+            <GridPane id="right-pane">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="778.0" minWidth="10.0" prefWidth="751.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="778.0" minWidth="10.0" prefWidth="751.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <HBox alignment="TOP_RIGHT" GridPane.columnIndex="1">
+                     <children>
+                        <HBox alignment="BOTTOM_LEFT">
+                           <children>
+                              <Label fx:id="hotelId_label" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="id-group" text="M123456" />
+                              <Button id="signOut-btn" fx:id="signOut_btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleMissionSwitch" prefHeight="11.0" styleClass="id-group" text="切换账号" GridPane.valignment="BOTTOM">
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </HBox>
+                        <Button id="minimize" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#handleMinimize" styleClass="default-btn" GridPane.columnIndex="1" />
+                        <Button id="exit" mnemonicParsing="false" onAction="#handleExit" styleClass="default-btn" GridPane.columnIndex="1" />
+                     </children>
+                  </HBox>
+                  <Label id="split-label" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="846.0" GridPane.columnSpan="2" />
+                  <AnchorPane fx:id="missionPane" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

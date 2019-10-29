@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="missionPane" minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.view.hotel.HotelOrderView">
+   <children>
+      <SplitPane dividerPositions="0.1" layoutX="91.0" layoutY="216.0" orientation="VERTICAL" prefHeight="698.0" prefWidth="696.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane maxHeight="-Infinity" minHeight="-Infinity" minWidth="0.0" prefHeight="75.0" prefWidth="160.0">
+               <children>
+                  <ComboBox fx:id="orderType_choice" layoutX="667.0" layoutY="38.0" prefWidth="150.0" />
+                  <HBox layoutX="43.0" layoutY="38.0">
+                     <children>
+                        <Button layoutX="679.0" layoutY="26.0" mnemonicParsing="false" onAction="#handleSearchOrder" text="search" />
+                        <TextField fx:id="orderId_field" layoutX="495.0" layoutY="26.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="order_list" prefHeight="625.0" prefWidth="748.0" stylesheets="@../css/InfoView.css">
+               <columns>
+                  <TableColumn fx:id="orderId_column" minWidth="100.0" prefWidth="123.0" text="订单号" />
+                  <TableColumn fx:id="orderState_column" minWidth="77.0" prefWidth="114.0" text="订单状态" />
+                  <TableColumn fx:id="orderHotel_column" minWidth="63.0" prefWidth="98.0" text="酒店名" />
+                  <TableColumn fx:id="orderPrice_column" minWidth="65.0" prefWidth="111.0" text="订单价格" />
+                  <TableColumn fx:id="orderTime_column" minWidth="60.0" prefWidth="119.0" text="下单时间" />
+                  <TableColumn fx:id="orderExeTime_column" minWidth="44.0" prefWidth="118.0" text="入住时间" />
+               </columns>
+            </TableView>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

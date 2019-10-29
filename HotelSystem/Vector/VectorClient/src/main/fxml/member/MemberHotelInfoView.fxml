@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="missionPane" prefHeight="700.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.view.member.MemberHotelInfoView">
+   <children>
+      <SplitPane dividerPositions="0.2191977077363897" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane fx:id="doubleNum" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="0.0" prefHeight="270.0" prefWidth="598.0">
+               <children>
+                  <Label fx:id="name_label" layoutX="126.0" layoutY="52.0" text="酒店名" />
+                  <Label fx:id="star_label" layoutX="126.0" layoutY="86.0" text="酒店星级" />
+                  <Label fx:id="point_label" layoutX="126.0" layoutY="122.0" text="酒店评分" />
+                  <Label fx:id="single_label" layoutX="102.0" layoutY="156.0" text="房间价格" />
+                  <Button fx:id="reserve_btn" layoutX="645.0" layoutY="216.0" mnemonicParsing="false" onAction="#handleReverseOrReturn" text="预订酒店" />
+                  <Button fx:id="return_btn" layoutX="742.0" layoutY="216.0" mnemonicParsing="false" onAction="#handleReverseOrReturn" text="返回" />
+                  <Label layoutX="308.0" layoutY="52.0" text="酒店简述" />
+                  <TextArea fx:id="description_area" layoutX="308.0" layoutY="81.0" prefHeight="162.0" prefWidth="291.0" wrapText="true" />
+                  <Label layoutX="36.0" layoutY="52.0" text="酒店名：" />
+                  <Label layoutX="36.0" layoutY="86.0" text="酒店星级：" />
+                  <Label layoutX="36.0" layoutY="122.0" text="酒店评分：" />
+                  <Label layoutX="36.0" layoutY="227.0" text="大床房：" />
+                  <Label layoutX="36.0" layoutY="156.0" text="单人间：" />
+                  <Label layoutX="36.0" layoutY="190.0" text="双人间：" />
+                  <Label fx:id="singleNum_label" layoutX="162.0" layoutY="156.0" text="房间价格" />
+                  <Label fx:id="double_label" layoutX="102.0" layoutY="190.0" text="房间价格" />
+                  <Label fx:id="doubleNum_label" layoutX="162.0" layoutY="190.0" text="房间价格" />
+                  <Label fx:id="familyNum_label" layoutX="162.0" layoutY="227.0" text="房间价格" />
+                  <Label fx:id="family_label" layoutX="102.0" layoutY="227.0" text="房间价格" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TitledPane animated="false" layoutX="123.0" layoutY="24.0" prefHeight="317.0" prefWidth="598.0" text="评价" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <content>
+                        <ListView fx:id="comment_list" prefHeight="200.0" prefWidth="200.0" />
+                     </content>
+                  </TitledPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="missionPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="850.0" stylesheets="@../css/InfoView.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.view.hotel.HotelProInfoView">
+   <children>
+      <Label layoutX="213.0" layoutY="93.0" text="促销类型" />
+      <Label layoutX="213.0" layoutY="169.0" text="促销名称" />
+      <Label layoutX="213.0" layoutY="242.0" text="开始时间" />
+      <Label layoutX="213.0" layoutY="319.0" text="结束时间" />
+      <Label layoutX="213.0" layoutY="399.0" text="折扣额度" />
+      <Button id="save-btn" layoutX="364.0" layoutY="497.0" mnemonicParsing="false" onAction="#handleDelete" styleClass="normal-button" text="删除" />
+      <Button layoutX="561.0" layoutY="497.0" mnemonicParsing="false" onAction="#handleCancel" styleClass="normal-button" text="取消" />
+      <Label fx:id="proType_label" layoutX="366.0" layoutY="93.0" text="Label" />
+      <TextField fx:id="name_field" layoutX="366.0" layoutY="164.0" prefWidth="183.0" />
+      <DatePicker fx:id="start_date" layoutX="366.0" layoutY="237.0" />
+      <DatePicker fx:id="end_date" layoutX="366.0" layoutY="314.0" />
+      <TextField fx:id="discount_field" layoutX="366.0" layoutY="394.0" prefWidth="183.0" />
+      <Button id="save-btn" layoutX="458.0" layoutY="497.0" mnemonicParsing="false" onAction="#handleModifyPromotion" styleClass="normal-button" text="保存" />
+   </children>
+</AnchorPane>

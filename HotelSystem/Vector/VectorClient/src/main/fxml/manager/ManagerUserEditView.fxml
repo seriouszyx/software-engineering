@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="missionPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="850.0" stylesheets="@../css/InfoView.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.view.manager.ManagerUserEditView">
+    <children>
+        <GridPane fx:id="member_grid" alignment="CENTER_RIGHT" layoutX="-14.0" layoutY="211.0" prefHeight="489.0" prefWidth="750.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="211.0">
+            <children>
+                <Label text="地址：" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <DatePicker fx:id="birthday_field" editable="false" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+                <Label fx:id="member_label" text="生日：" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <Label text="性别：" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <HBox alignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="5">
+                    <children>
+                        <RadioButton fx:id="male_radio" mnemonicParsing="false" prefHeight="16.0" prefWidth="141.0" text="男" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <RadioButton fx:id="female_radio" mnemonicParsing="false" prefHeight="16.0" prefWidth="142.0" text="女" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                    </children>
+                </HBox>
+                <Label text="信用：" GridPane.columnIndex="1" />
+            <TextField fx:id="address_field" editable="false" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+            <Label text="VIP：" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="联系方式：" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="phone_field" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+            <TextField fx:id="enterprise_field" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+            <Label fx:id="credit_label" GridPane.columnIndex="2" />
+            <Label fx:id="VIP_label" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            </children>
+            <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+        </GridPane>
+      <Separator layoutY="210.0" prefHeight="3.0" prefWidth="750.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="210.0" />
+      <Label layoutX="93.0" layoutY="104.0" text="用户Id：" />
+          <Label layoutX="93.0" layoutY="151.0" text="用户名：" />
+      <Label fx:id="ID_label" layoutX="198.0" layoutY="104.0" text="ID" />
+          <TextField fx:id="name_field" editable="false" layoutX="198.0" layoutY="147.0" prefWidth="250.0" />
+      <Button id="save-btn" fx:id="delete_btn" layoutX="544.0" layoutY="145.0" mnemonicParsing="false" onAction="#handleDelete" styleClass="normal-button" text="删除" />
+          <Button id="save-btn" layoutX="641.0" layoutY="145.0" mnemonicParsing="false" onAction="#handleEditUser" styleClass="normal-button" text="保存" />
+      <Button layoutX="732.0" layoutY="145.0" mnemonicParsing="false" onAction="#handleMissionCancel" styleClass="normal-button" text="取消" />
+      <Label layoutX="93.0" layoutY="62.0" text="用户类别：" />
+      <Label fx:id="type_label" layoutX="198.0" layoutY="62.0" text="类别" />
+      <GridPane fx:id="hotel_grid" alignment="CENTER_RIGHT" layoutX="-4.0" layoutY="221.0" prefHeight="489.0" prefWidth="750.0" visible="false">
+         <children>
+            <Label text="地址：" GridPane.columnIndex="1" />
+            <Button fx:id="confirm_btn1" mnemonicParsing="false" text="保存" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button fx:id="cancel_btn1" cancelButton="true" mnemonicParsing="false" text="取消" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <TextField fx:id="hotelAddress_field" editable="false" GridPane.columnIndex="2" GridPane.columnSpan="2" />
+            <TextField fx:id="hotelPhone_field" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+            <Label text="联系方式：" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ComboBox fx:id="star_combo" prefHeight="23.0" prefWidth="191.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+            <Label text="星级：" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="酒店简述：" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextArea fx:id="discription_area" prefHeight="88.0" prefWidth="210.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+            <Label text="评分：" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="hotelPoint_field" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+    </children>
+</AnchorPane>

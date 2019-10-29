@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="CUSTOM_SCOPE_NAME" value="Project Files" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="faa990ec-c1f2-406b-a89a-91a8ec201095" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_beta_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/cssdialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorClient/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/VectorClient/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorClient/VectorClient.eml" beforeDir="false" afterPath="$PROJECT_DIR$/VectorClient/VectorClient.eml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorClient/src/main/java/businesslogic/impl/AccountBlServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/VectorClient/src/main/java/businesslogic/impl/AccountBlServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorClient/src/main/java/presentation/view/member/MemberHotelListView.java" beforeDir="false" afterPath="$PROJECT_DIR$/VectorClient/src/main/java/presentation/view/member/MemberHotelListView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorClient/target/classes/businesslogic/impl/AccountBlServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorClient/target/classes/businesslogic/impl/AccountBlServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorClient/target/classes/businesslogic/impl/HotelBlServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorClient/target/classes/businesslogic/impl/HotelBlServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorClient/target/classes/businesslogic/impl/HotelListServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorClient/target/classes/businesslogic/impl/HotelListServiceImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorClient/target/classes/businesslogic/impl/HotelListServiceImpl$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorClient/target/classes/businesslogic/impl/HotelListServiceImpl$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorClient/target/classes/businesslogic/impl/HotelListServiceImpl$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorClient/target/classes/businesslogic/impl/HotelListServiceImpl$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorClient/target/classes/businesslogic/impl/HotelListServiceImpl$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorClient/target/classes/businesslogic/impl/HotelListServiceImpl$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorClient/target/classes/businesslogic/impl/HotelListServiceImpl$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorClient/target/classes/businesslogic/impl/HotelListServiceImpl$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorClient/target/classes/businesslogic/impl/HotelListServiceImpl$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorClient/target/classes/businesslogic/impl/HotelListServiceImpl$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorClient/target/classes/businesslogic/impl/HotelListServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorClient/target/classes/businesslogic/impl/HotelListServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorClient/target/classes/businesslogic/impl/MemberBlServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorClient/target/classes/businesslogic/impl/MemberBlServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorClient/target/classes/po/AccountPo.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorClient/target/classes/po/AccountPo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorClient/target/classes/po/HotelPo.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorClient/target/classes/po/HotelPo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorClient/target/classes/po/MemberPo.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorClient/target/classes/po/MemberPo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorClient/target/classes/po/OrderPo.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorClient/target/classes/po/OrderPo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorClient/target/classes/po/PromotionPo.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorClient/target/classes/po/PromotionPo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorClient/target/classes/rmi/RemoteHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorClient/target/classes/rmi/RemoteHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorClient/target/classes/runner/ClientRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorClient/target/classes/runner/ClientRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorClient/target/classes/vo/AccountVo.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorClient/target/classes/vo/AccountVo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorClient/target/classes/vo/HotelVo.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorClient/target/classes/vo/HotelVo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorClient/target/classes/vo/MemberVo.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorClient/target/classes/vo/MemberVo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/src/main/java/dataService/dao/impl/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/src/main/java/dataService/dao/impl/AccountDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/src/main/java/dataService/dataHelper/impl/AccountDataTxtHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/src/main/java/dataService/dataHelper/impl/AccountDataTxtHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/src/main/java/dataService/dataHelper/impl/CreditDataTxtHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/src/main/java/dataService/dataHelper/impl/CreditDataTxtHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/src/main/java/dataService/dataHelper/impl/HotelDataTxtHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/src/main/java/dataService/dataHelper/impl/HotelDataTxtHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/src/main/java/dataService/dataHelper/impl/HotelPromotionDataTxtHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/src/main/java/dataService/dataHelper/impl/HotelPromotionDataTxtHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/src/main/java/dataService/dataHelper/impl/MarketPromotionDataTxtHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/src/main/java/dataService/dataHelper/impl/MarketPromotionDataTxtHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/src/main/java/dataService/dataHelper/impl/MemberDataTxtHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/src/main/java/dataService/dataHelper/impl/MemberDataTxtHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/src/main/java/dataService/dataHelper/impl/OrderDataTxtHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/src/main/java/dataService/dataHelper/impl/OrderDataTxtHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/target/classes/common/AccountType.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/target/classes/common/AccountType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/target/classes/common/InfoType.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/target/classes/common/InfoType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/target/classes/common/ResultMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/target/classes/common/ResultMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/target/classes/common/RoomType.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/target/classes/common/RoomType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/target/classes/common/Sex.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/target/classes/common/Sex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/target/classes/dataService/dao/Impl/AccountDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/target/classes/dataService/dao/Impl/AccountDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/target/classes/dataService/dao/Impl/HotelDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/target/classes/dataService/dao/Impl/HotelDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/target/classes/dataService/dao/Impl/MemberDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/target/classes/dataService/dao/Impl/MemberDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/target/classes/dataService/dataHelper/Impl/AccountDataTxtHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/target/classes/dataService/dataHelper/Impl/AccountDataTxtHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/target/classes/dataService/dataHelper/Impl/DataFactoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/target/classes/dataService/dataHelper/Impl/DataFactoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/target/classes/dataService/dataHelper/Impl/HotelDataTxtHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/target/classes/dataService/dataHelper/Impl/HotelDataTxtHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/target/classes/dataService/dataHelper/Impl/MemberDataTxtHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/target/classes/dataService/dataHelper/Impl/MemberDataTxtHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/target/classes/po/AccountPo.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/target/classes/po/AccountPo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/target/classes/po/HotelPo.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/target/classes/po/HotelPo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/target/classes/po/MemberPo.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/target/classes/po/MemberPo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/target/classes/po/OrderPo.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/target/classes/po/OrderPo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/target/classes/po/PromotionPo.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/target/classes/po/PromotionPo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/target/classes/rmi/DataRemoteObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/target/classes/rmi/DataRemoteObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VectorServer/target/classes/rmi/RemoteHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/VectorServer/target/classes/rmi/RemoteHelper.class" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Vector" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JavaFXApplication" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/work/maven/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\work\maven\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1S3M5awKULPFPJNvOueSPK4MiFg" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Code maturity issuesJava</id>
+          </State>
+          <State>
+            <id>Code style issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>LambdaBodyCanBeCodeBlock</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Molloh/Desktop/HPMS/Hotel-Property-Management-System/Vector/VectorClient/src/main/java/presentation/controller/service/marketer/MarketerOrderRevokeViewControllerService.java&#10;titledP&#9;PSI&#9;JAVA://javafx.scene.control.TitledPane&#10;initTable&#9;PSI&#9;JAVA://presentation.view.member.MemberHotelListView#initTable" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../symphony" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Molloh\Desktop\HPMS\Hotel-Property-Management-System\Vector\VectorServer\src\main\java\vo" />
+      <recent name="C:\Users\Molloh\Desktop\HPMS\Hotel-Property-Management-System\Vector\VectorServer\src\main\java\po" />
+      <recent name="C:\Users\Molloh\Desktop\HPMS\Hotel-Property-Management-System\Vector\VectorServer\src\main\java\dataService\dataHelper\impl" />
+      <recent name="C:\Users\Molloh\Desktop\HPMS\Hotel-Property-Management-System\Vector\VectorServer\src\main\java\dataService\dataHelper\service" />
+      <recent name="C:\Users\Molloh\Desktop\HPMS\Hotel-Property-Management-System\Vector\VectorServer\src\main\java\dataService\dao\service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Molloh\Desktop\HPMS\Hotel-Property-Management-System\Vector\VectorClient\src\main\fxml\unity" />
+      <recent name="C:\Users\Molloh\Desktop\HPMS\Hotel-Property-Management-System\Vector\VectorClient\src\main\resources\images" />
+      <recent name="C:\Users\Molloh\Desktop\HPMS\Hotel-Property-Management-System\Vector\VectorClient\src\main\java\presentation\view\sign" />
+      <recent name="C:\Users\Molloh\Desktop\HPMS\Hotel-Property-Management-System\Vector\VectorClient\src\main\resources" />
+      <recent name="C:\Users\Molloh\Desktop\HPMS\Hotel-Property-Management-System\Vector\VectorClient\src\main\images" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.ClientRunner">
+    <configuration name="ClientRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="runner.ClientRunner" />
+      <module name="VectorClient" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.ServerRunner" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="presentation.runner.Runner" />
+      <module name="VectorClient" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="presentation.runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="runner.ServerRunner" />
+      <module name="VectorServer" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.ServerRunner" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VectorClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="myTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="myTest" />
+      <option name="MAIN_CLASS_NAME" value="myTest.TestAccount" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAccount.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VectorClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="myTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="myTest" />
+      <option name="MAIN_CLASS_NAME" value="myTest.TestAccount" />
+      <option name="METHOD_NAME" value="testLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.ClientRunner" />
+      <item itemvalue="Application.Runner" />
+      <item itemvalue="Application.ServerRunner" />
+      <item itemvalue="JUnit.TestAccount" />
+      <item itemvalue="JUnit.TestAccount.testLogin" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ClientRunner" />
+        <item itemvalue="Application.ServerRunner" />
+        <item itemvalue="JUnit.TestAccount" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="faa990ec-c1f2-406b-a89a-91a8ec201095" name="Default" comment="" />
+      <created>1479882333113</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1479882333113</updated>
+      <workItem from="1479882337986" duration="5590000" />
+      <workItem from="1479889099749" duration="45000" />
+      <workItem from="1479890902211" duration="442000" />
+      <workItem from="1479899215306" duration="1281000" />
+      <workItem from="1480928552845" duration="382000" />
+      <workItem from="1480929028839" duration="28000" />
+      <workItem from="1481024037280" duration="2272000" />
+      <workItem from="1481088214831" duration="264000" />
+      <workItem from="1481088568924" duration="4130000" />
+      <workItem from="1481092765972" duration="3348000" />
+      <workItem from="1481096164105" duration="4782000" />
+      <workItem from="1481101076902" duration="1392000" />
+      <workItem from="1481440903891" duration="121000" />
+      <workItem from="1481441239900" duration="12170000" />
+      <workItem from="1481456419766" duration="13109000" />
+      <workItem from="1482316303846" duration="2199000" />
+      <workItem from="1482319362290" duration="8586000" />
+      <workItem from="1482331105316" duration="3552000" />
+      <workItem from="1482390160414" duration="3094000" />
+      <workItem from="1482408237018" duration="6869000" />
+      <workItem from="1482418693591" duration="2401000" />
+      <workItem from="1482491018085" duration="5973000" />
+      <workItem from="1482566211008" duration="9260000" />
+      <workItem from="1482577273492" duration="63000" />
+      <workItem from="1482577396709" duration="8921000" />
+      <workItem from="1482628429933" duration="6620000" />
+      <workItem from="1482644023033" duration="6050000" />
+      <workItem from="1482650509353" duration="7836000" />
+      <workItem from="1482668503804" duration="8624000" />
+      <workItem from="1482760476734" duration="4255000" />
+      <workItem from="1482845830846" duration="6224000" />
+      <workItem from="1482937240224" duration="2429000" />
+      <workItem from="1482985858468" duration="3546000" />
+      <workItem from="1483154951561" duration="3000" />
+      <workItem from="1483172134276" duration="18806000" />
+      <workItem from="1483242371210" duration="13079000" />
+      <workItem from="1483268689800" duration="1296000" />
+      <workItem from="1483270348991" duration="38415000" />
+      <workItem from="1483309915640" duration="4980000" />
+      <workItem from="1483317740197" duration="2163000" />
+      <workItem from="1483320608650" duration="16059000" />
+      <workItem from="1570787652945" duration="1252000" />
+      <workItem from="1570789255857" duration="7461000" />
+      <workItem from="1570855170382" duration="1507000" />
+      <workItem from="1571965682387" duration="1519000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+</project>

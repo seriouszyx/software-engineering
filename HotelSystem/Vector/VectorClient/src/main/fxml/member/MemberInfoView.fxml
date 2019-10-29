@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.view.member.MemberInfoView">
+   <children>
+      <GridPane alignment="CENTER_RIGHT" layoutX="6.0" layoutY="14.0" prefHeight="700.0" prefWidth="750.0" stylesheets="@../css/InfoView.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="name_field" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+            <Label text="用户名：" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="密码：" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="type_label" text="生日：" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="性别：" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <HBox alignment="CENTER" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="7">
+               <children>
+                  <RadioButton fx:id="male_radio" alignment="CENTER_LEFT" mnemonicParsing="false" prefHeight="19.0" prefWidth="167.0" text="男" />
+                  <RadioButton fx:id="female_radio" mnemonicParsing="false" prefHeight="19.0" prefWidth="158.0" text="女" />
+               </children>
+            </HBox>
+            <Button id="save-btn" mnemonicParsing="false" onAction="#handleModify" styleClass="normal-button" text="保存" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="8" />
+            <Button cancelButton="true" mnemonicParsing="false" onAction="#handleCancel" styleClass="normal-button" text="取消" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="8" />
+            <Label text="信用：" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="credit_label" text="300" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label text="地址：" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label text="联系方式：" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="address_field" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+            <TextField fx:id="phone_field" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="6" />
+            <Label fx:id="VIP_label" text="VIP 1" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font></Label>
+            <Button id="modify-btn" fx:id="modifyKey_btn" alignment="CENTER" mnemonicParsing="false" onAction="#handleModifyPassword" prefHeight="29.0" prefWidth="49.0" text="修改" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <PasswordField fx:id="password_field" prefHeight="25.0" prefWidth="217.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+            <TextField fx:id="enterprise_field" editable="false" visible="false" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+            <DatePicker fx:id="birthday_field" prefHeight="27.0" prefWidth="268.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="124.0" minWidth="10.0" prefWidth="124.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="79.0" />
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="118.0" minWidth="10.0" prefWidth="110.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="158.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.0" minWidth="10.0" prefWidth="113.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="92.0" minWidth="10.0" prefWidth="65.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>

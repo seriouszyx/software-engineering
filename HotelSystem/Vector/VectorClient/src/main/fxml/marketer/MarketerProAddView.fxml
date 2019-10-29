@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="missionPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="850.0" stylesheets="@../css/InfoView.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.view.marketer.MarketerProAddView">
+   <children>
+      <Label layoutX="224.0" layoutY="138.0" text="促销类型" visible="false" />
+      <Label layoutX="224.0" layoutY="200.0" text="促销名称" />
+      <Label layoutX="224.0" layoutY="254.0" text="开始时间" />
+      <Label layoutX="224.0" layoutY="312.0" text="结束时间" />
+      <Label layoutX="224.0" layoutY="374.0" text="折扣额度" />
+      <Button layoutX="463.0" layoutY="479.0" mnemonicParsing="false" onAction="#handleCancel" styleClass="normal-button" text="取消" />
+      <Label fx:id="proType_label" layoutX="350.0" layoutY="138.0" text="Label" visible="false" />
+      <TextField fx:id="name_field" layoutX="350.0" layoutY="196.0" prefHeight="23.0" prefWidth="186.0" />
+      <DatePicker fx:id="start_date" layoutX="350.0" layoutY="250.0" />
+      <DatePicker fx:id="end_date" layoutX="350.0" layoutY="308.0" />
+      <TextField fx:id="discount_field" layoutX="350.0" layoutY="370.0" prefHeight="23.0" prefWidth="186.0" />
+      <Button id="save-btn" layoutX="355.0" layoutY="479.0" mnemonicParsing="false" onAction="#handleConfirm" styleClass="normal-button" text="保存" />
+   </children>
+</AnchorPane>

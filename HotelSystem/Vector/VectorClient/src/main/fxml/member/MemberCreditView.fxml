@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.view.member.MemberCreditView">
+   <children>
+      <TableView fx:id="credit_list" layoutX="81.0" layoutY="77.0" prefHeight="700.0" prefWidth="750.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="creditNow_column" prefWidth="181.0" text="当前信用值" />
+          <TableColumn fx:id="time_column" prefWidth="131.0" text="时间" />
+            <TableColumn fx:id="delta_column" minWidth="0.0" prefWidth="149.0" text="信用值变化" />
+            <TableColumn fx:id="reason_colum" minWidth="0.0" prefWidth="288.0" text="变化原因" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

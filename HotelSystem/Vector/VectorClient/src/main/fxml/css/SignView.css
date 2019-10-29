@@ -1,0 +1,90 @@
+* {
+    -fx-font-family: "Microsoft YaHei UI Light";
+    -fx-background-radius: 0;
+}
+
+.root {
+    -fx-background-color: #2A363F;
+}
+
+.sign-button {
+    -fx-pref-width: 350px;
+    -fx-pref-height: 50px;
+    -fx-text-fill: #F6F8F7;
+    -fx-font-size: 22px;
+    -fx-font-weight: bolder;
+    -fx-background-radius: 5;
+    -fx-background-color: rgba(110, 217, 160, 0.9);
+}
+
+.sign-button:hover {
+    -fx-background-color: rgba(110, 217, 160, 1);
+}
+
+.sign-button:pressed {
+    -fx-background-color: rgba(110, 217, 160, 0.9);
+}
+
+.alert-label {
+    -fx-text-fill: #FFBA84;
+}
+
+.text-field, .password-field {
+    -fx-pref-width: 350px;
+    -fx-pref-height: 50px;
+    -fx-text-fill: #F6F8F7;
+    -fx-font-size: 16px;
+    -fx-border-color: #5B666B;
+    -fx-border-radius: 5;
+    -fx-background-color: transparent;
+}
+
+.text-field:focused {
+    -fx-border-color: #6ED9A0;
+}
+
+#separator{
+    -fx-background-color: #5B666B;
+}
+
+.member-select {
+    -fx-background-color: transparent;
+    -fx-font-size: 14px;
+    -fx-text-fill: #5B666B;
+}
+
+.member-select:selected {
+    -fx-text-fill: #F6F8F7;
+}
+
+.switch {
+    -fx-background-color: transparent;
+    -fx-font-size: 16px;
+    -fx-text-fill: #5B666B;
+}
+
+.switch:hover {
+    -fx-text-fill: #F6F8F7;
+}
+
+.switch:pressed {
+    -fx-text-fill: #5B666B;
+}
+
+#minimize {
+    -fx-graphic: url("/images/V.png");
+    -fx-background-color: transparent;
+}
+
+#exit {
+    -fx-graphic: url("/images/X.png");
+    -fx-background-color: transparent;
+}
+
+#exit:hover, #minimize:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.2);
+}
+
+#exit:pressed, #minimize:pressed {
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+}
