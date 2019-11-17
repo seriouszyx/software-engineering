@@ -1,4 +1,4 @@
 from snownlp import sentiment
 
-sentiment.train('neg.txt', 'pos.txt')
+sentiment.train('negative_dict.txt', 'positive_dict.txt')
 sentiment.save('sentiment.marshal')
