@@ -5,7 +5,7 @@ import time
 import jieba
 import random
 
-tao_bao_comments = 'tb_comments.txt'
+tao_bao_comments = '../data/tb_comments.txt'
 
 
 def cut_word():  # 对数据分词
