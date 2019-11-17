@@ -1,5 +1,9 @@
+import os
+
 from snownlp import SnowNLP
 import matplotlib.pyplot as plt
+from snownlp import sentiment
+sentiment.classifier.load('train_model/sentiment.marshal')
 
 comment = []
 pos_count = 0
@@ -21,7 +25,7 @@ for line_data in open("../data/data_keywords.txt", 'r', encoding='utf-8'):
     else:
         pass
 
-labels = 'Positive Side\n(eg. pray,eulogize and suggestion)', 'Negative Side\n(eg. abuse,sarcasm and indignation)'
+labels = 'Positive Side', 'Negative Side'
 fracs = [pos_count, neg_count]
 explode = [0.1, 0]  # 0.1 凸出这部分，
 plt.axes(aspect=1)  # set this , Figure is round, otherwise it is an ellipse

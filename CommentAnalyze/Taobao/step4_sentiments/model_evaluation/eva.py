@@ -1,4 +1,6 @@
 from snownlp import SnowNLP
+from snownlp import sentiment
+sentiment.classifier.load('../train_model/sentiment.marshal')
 
 comment = []
 
@@ -8,7 +10,7 @@ array2 =[]
 count_num = 0
 count_sum=200
   
-for line_data in open("eva_data.dat"):
+for line_data in open("eva_data.dat", 'r', encoding='utf-8'):
     
     comment = line_data
     
@@ -23,15 +25,15 @@ for line_data in open("eva_data.dat"):
     
     eva = str(eva_label)
     
-    f = open("eva_result.dat", "a+")
+    f = open("eva_result.dat", "a+", encoding='utf-8')
     f.write(eva)
     f.write('\n')
     f.close()
 
-for line1 in open("eva_label.dat"):
+for line1 in open("eva_label.dat", 'r', encoding='utf-8'):
     array1.append(line1)
     
-for line2 in open("eva_result.dat"):
+for line2 in open("eva_result.dat", 'r', encoding='utf-8'):
     array2.append(line2)
 
 for i in range(0,200):
