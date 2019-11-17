@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.guestUI.controller.HotelSearchController">
+   <children>
+      <Pane fx:id="cityAndCircle" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="895.0">
+         <children>
+            <ImageView fx:id="rightImage" fitHeight="601.0" fitWidth="895.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../png%20(1)/guest/mainCircleChoose.png" />
+               </image>
+            </ImageView>
+            <AnchorPane blendMode="MULTIPLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="895.0">
+               <children>
+                  <Button layoutX="706.0" layoutY="231.0" mnemonicParsing="false" onAction="#openHotelCheck" prefHeight="3.0" text="搜索" />
+                  <ComboBox fx:id="cycleChoose" layoutX="521.0" layoutY="231.0" prefHeight="30.0" prefWidth="137.0" />
+                  <ComboBox fx:id="cityChoose" layoutX="294.0" layoutY="231.0" prefHeight="30.0" prefWidth="137.0" />
+                  <Button layoutX="380.0" layoutY="396.0" mnemonicParsing="false" onAction="#openHasOrderedPane" prefHeight="3.0" text="查看以前入住的酒店" />
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <Pane fx:id="hotelDetail" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="895.0" visible="false">
+         <children>
+            <ImageView fx:id="rightImage1" fitHeight="601.0" fitWidth="895.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../png%20(1)/guest/mainHotelDetail.png" />
+               </image>
+            </ImageView>
+            <AnchorPane blendMode="MULTIPLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="895.0">
+               <children>
+                  <Label fx:id="hotelNameInDetail" layoutX="92.0" layoutY="115.0" prefHeight="39.0" text="1244">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Button focusTraversable="false" layoutX="777.0" layoutY="327.0" mnemonicParsing="false" onAction="#returnHotelCheck" prefHeight="32.0" prefWidth="50.0" text="返回" />
+                  <Label fx:id="hotelIDInDetail" focusTraversable="false" layoutX="827.0" layoutY="532.0" text="123" visible="false" />
+                  <Button focusTraversable="false" layoutX="54.0" layoutY="500.0" mnemonicParsing="false" onAction="#openHotelOrder" prefHeight="32.0" text="订单查看" />
+                  <Button focusTraversable="false" layoutX="54.0" layoutY="442.0" mnemonicParsing="false" onAction="#openComment" prefHeight="32.0" text="客户评价" />
+                  <Button focusTraversable="false" layoutX="54.0" layoutY="382.0" mnemonicParsing="false" onAction="#openHotelDetail" prefHeight="32.0" text="房型列表" />
+                  <Pane fx:id="commentPane" layoutX="154.0" layoutY="371.0" prefHeight="197.0" prefWidth="673.0" visible="false">
+                     <children>
+                        <TableView fx:id="evaluationTable" editable="true" focusTraversable="false" layoutX="14.0" prefHeight="197.0" prefWidth="653.0">
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                           <columns>
+                              <TableColumn fx:id="guestIDColumn" prefWidth="144.0" resizable="false" sortable="false" text="客户ID" />
+                              <TableColumn fx:id="scoreColumn" prefWidth="130.0" resizable="false" text="评分" />
+                              <TableColumn fx:id="commentColumn" prefWidth="378.0" resizable="false" sortable="false" text="评价" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="orderPane" layoutX="165.0" layoutY="373.0" prefHeight="189.0" prefWidth="653.0" visible="false">
+                     <children>
+                        <TableView fx:id="orderTable" focusTraversable="false" layoutX="2.0" layoutY="-3.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="197.0" prefWidth="653.0">
+                           <columns>
+                              <TableColumn fx:id="orderIDColumn" prefWidth="113.0" sortable="false" text="订单编号" />
+                              <TableColumn fx:id="hotelNameColumn" prefWidth="122.0" text="酒店名" visible="false" />
+                              <TableColumn fx:id="addressColumn" prefWidth="170.0" text="地址" visible="false" />
+                              <TableColumn fx:id="checkInTimeColumn" prefWidth="146.0" text="预计入住时间" />
+                              <TableColumn fx:id="checkOutTimeColumn" prefWidth="164.0" sortable="false" text="预计离开时间" />
+                              <TableColumn fx:id="priceColumn1" prefWidth="122.0" resizable="false" text="价格" />
+                              <TableColumn fx:id="stateColumn" prefWidth="107.0" text="订单状态" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="roomPane" layoutX="171.0" layoutY="362.0" prefHeight="209.0" prefWidth="653.0">
+                     <children>
+                        <Button focusTraversable="false" layoutX="530.0" layoutY="93.0" mnemonicParsing="false" onAction="#openCreateOrder" text="预定" />
+                        <TableView fx:id="roomTable" editable="true" focusTraversable="false" layoutX="33.0" layoutY="9.0" prefHeight="197.0" prefWidth="468.0">
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                           <columns>
+                              <TableColumn fx:id="typeColumn" maxWidth="300.0" prefWidth="150.0" resizable="false" sortable="false" text="房间类型" />
+                              <TableColumn fx:id="roomNameColumn" prefWidth="309.0" text="房间名称" visible="false" />
+                              <TableColumn fx:id="roomNumColumn" prefWidth="309.0" text="房间总数" visible="false" />
+                              <TableColumn fx:id="remainRoomColumn" minWidth="0.0" prefWidth="148.0" resizable="false" sortable="false" text="剩余数量" />
+                              <TableColumn fx:id="priceColumn" prefWidth="146.0" resizable="false" text="价格" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </Pane>
+                  <Label fx:id="cityInDetail" layoutX="124.0" layoutY="164.0" text="123">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cycleInDetail" layoutX="204.0" layoutY="164.0" text="123">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane focusTraversable="false" hbarPolicy="NEVER" layoutX="585.0" layoutY="228.0" prefHeight="74.0" prefWidth="239.0">
+                     <content>
+                        <Label fx:id="equipmentInDetail" focusTraversable="false" prefWidth="222.0" wrapText="true" />
+                     </content>
+                  </ScrollPane>
+                  <Label fx:id="LevelInDetail" layoutX="256.0" layoutY="234.0" text="123">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ScoreInDetail" layoutX="258.0" layoutY="265.0" text="123">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="introductionInDetail" layoutX="244.0" layoutY="323.0" prefWidth="224.0" wrapText="true" />
+                  <Label fx:id="hotelAddressInDetail" layoutX="320.0" layoutY="165.0" text="地址">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <Pane fx:id="hotelCheck" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="895.0" visible="false">
+         <children>
+            <ImageView fx:id="rightImage2" fitHeight="601.0" fitWidth="895.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../png%20(1)/guest/mainHotelList.png" />
+               </image>
+            </ImageView>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="895.0">
+               <children>
+                  <Pane layoutX="78.0" layoutY="176.0" prefHeight="367.0" prefWidth="755.0">
+                     <children>
+                        <TableView fx:id="hotelTable" blendMode="MULTIPLY" editable="true" focusTraversable="false" layoutY="6.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="356.0" prefWidth="755.0">
+                           <columns>
+                              <TableColumn fx:id="hotelIDColumn3" prefWidth="113.0" sortable="false" text="酒店编号" visible="false" />
+                              <TableColumn fx:id="hotelNameColumn3" prefWidth="125.0" sortable="false" text="酒店名" />
+                              <TableColumn fx:id="addressColumn3" prefWidth="154.0" sortable="false" text="地址" />
+                              <TableColumn fx:id="cityColumn3" prefWidth="81.0" sortable="false" text="城市" />
+                              <TableColumn fx:id="cycleColumn3" prefWidth="111.0" sortable="false" text="商圈" />
+                              <TableColumn fx:id="hasOrderColumn3" prefWidth="87.0" resizable="false" sortable="false" text="以前预定" />
+                              <TableColumn fx:id="minPriceColumn3" prefWidth="71.0" resizable="false" text="最低价格" />
+                              <TableColumn fx:id="levelColumn3" prefWidth="62.0" resizable="false" text="星级" />
+                              <TableColumn fx:id="scoreColumn3" prefWidth="63.0" text="评分" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </Pane>
+                  <Button blendMode="MULTIPLY" layoutX="650.0" layoutY="131.0" mnemonicParsing="false" onAction="#openHotelDetail" text="查看详情" />
+                  <Button blendMode="MULTIPLY" layoutX="753.0" layoutY="131.0" mnemonicParsing="false" onAction="#createOrderIncheck" text="立即预定" />
+                  <Button fx:id="returnBT" blendMode="MULTIPLY" layoutX="75.0" layoutY="131.0" mnemonicParsing="false" onMouseClicked="#openSwitchCityCircle" prefHeight="30.0" prefWidth="72.0" text="返回" visible="false" />
+                  <Pane fx:id="cyclePane" blendMode="MULTIPLY" layoutX="84.0" layoutY="123.0" prefHeight="61.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="-8.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#openSwitchCityCircle" text="切换城市商圈" />
+                        <Button layoutX="144.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#openChoose" text="筛选" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <Pane fx:id="createPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="895.0" visible="false">
+         <children>
+            <ImageView fx:id="rightImage3" fitHeight="601.0" fitWidth="895.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../png%20(1)/guest/mainOrderCommit.png" />
+               </image>
+            </ImageView>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="895.0">
+               <children>
+                  <Pane blendMode="MULTIPLY" layoutY="61.0" prefHeight="541.0" prefWidth="895.0">
+                     <children>
+                        <Label fx:id="remainNumInOrder" layoutX="467.0" layoutY="202.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="messageInOrder" focusTraversable="false" layoutX="267.0" layoutY="413.0" prefHeight="77.0" prefWidth="386.0" wrapText="true">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </TextArea>
+                        <Label fx:id="hotelNameInOrder" layoutX="116.0" layoutY="58.0">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Button focusTraversable="false" layoutX="358.0" layoutY="497.0" mnemonicParsing="false" onAction="#returnHotelCheck" text="返回" />
+                        <Button focusTraversable="false" layoutX="481.0" layoutY="497.0" mnemonicParsing="false" onAction="#commitOrder" text="提交" />
+                        <GridPane layoutX="686.0" layoutY="161.0" prefHeight="99.0" prefWidth="131.0">
+                           <children>
+                              <TextField fx:id="phoneInOrder" focusTraversable="false" prefHeight="30.0" prefWidth="105.0" GridPane.rowIndex="2" />
+                              <TextField fx:id="nameInOrder" focusTraversable="false" prefHeight="30.0" prefWidth="105.0" GridPane.rowIndex="1" />
+                              <ComboBox fx:id="guestNumInOrder" focusTraversable="false" prefHeight="30.0" prefWidth="78.0" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="129.0" minWidth="10.0" prefWidth="103.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <Label fx:id="hotelIDInOrder" layoutX="126.0" layoutY="50.0" visible="false" />
+                        <Label fx:id="hotelAddressInOrder" layoutX="151.0" layoutY="106.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="priceOfOrder" layoutX="699.0" layoutY="89.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="previousPriceInOrder" layoutX="699.0" layoutY="57.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="roomTypeInOrder" focusTraversable="false" layoutX="251.0" layoutY="161.0" prefHeight="32.0" prefWidth="177.0" />
+                        <GridPane layoutX="268.0" layoutY="257.0" prefHeight="132.0" prefWidth="192.0">
+                           <children>
+                              <DatePicker fx:id="expectExecuteDateInOrder" editable="false" focusTraversable="false" />
+                              <DatePicker fx:id="expectLeaveDateInOrder" editable="false" focusTraversable="false" GridPane.rowIndex="3" />
+                              <HBox alignment="CENTER_LEFT" prefHeight="41.0" prefWidth="157.0" GridPane.rowIndex="1">
+                                 <children>
+                                    <ComboBox fx:id="hourInOrder" focusTraversable="false" prefHeight="30.0" prefWidth="74.0" />
+                                    <Label prefHeight="30.0" prefWidth="33.0" text="  ：" />
+                                    <ComboBox fx:id="minuteInOrder" focusTraversable="false" prefHeight="30.0" prefWidth="78.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="61.0" prefWidth="146.0" GridPane.rowIndex="4">
+                                 <children>
+                                    <ComboBox fx:id="hourInOrder2" focusTraversable="false" prefHeight="30.0" prefWidth="76.0" />
+                                    <Label prefHeight="30.0" prefWidth="33.0" text="  ：" />
+                                    <ComboBox fx:id="minuteInOrder2" focusTraversable="false" prefHeight="30.0" prefWidth="78.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="332.0" minWidth="0.0" prefWidth="240.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="28.0" minHeight="0.0" prefHeight="1.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <ComboBox fx:id="roomCountInOrder" focusTraversable="false" layoutX="251.0" layoutY="196.0" prefHeight="30.0" prefWidth="66.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <Pane fx:id="hotelChoose" blendMode="MULTIPLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="895.0" visible="false">
+         <children>
+            <ImageView fx:id="rightImage5" fitHeight="601.0" fitWidth="895.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../1111111/mainHotelFilter.png" />
+               </image>
+            </ImageView>
+            <AnchorPane blendMode="MULTIPLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="895.0">
+               <children>
+                  <HBox blendMode="MULTIPLY" layoutX="332.0" layoutY="191.0" prefHeight="20.0" prefWidth="505.0" spacing="20.0">
+                     <children>
+                        <CheckBox fx:id="box1" focusTraversable="false" mnemonicParsing="false" text="单人间" />
+                        <CheckBox fx:id="box2" focusTraversable="false" mnemonicParsing="false" text="双人间" />
+                        <CheckBox fx:id="box3" focusTraversable="false" mnemonicParsing="false" text="三人间" />
+                        <CheckBox fx:id="box4" focusTraversable="false" mnemonicParsing="false" text="商务套房" />
+                        <CheckBox fx:id="box5" focusTraversable="false" mnemonicParsing="false" text="总统套房" />
+                     </children>
+                  </HBox>
+                  <Button focusTraversable="false" layoutX="490.0" layoutY="546.0" mnemonicParsing="false" onAction="#selectHotel" text="筛选" />
+                  <TextField fx:id="hotelNameInput" focusTraversable="false" layoutX="338.0" layoutY="125.0" prefHeight="23.0" prefWidth="309.0" />
+                  <CheckBox fx:id="boxOnly" focusTraversable="false" layoutX="383.0" layoutY="499.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="28.0" />
+                  <Button focusTraversable="false" layoutX="372.0" layoutY="545.0" mnemonicParsing="false" onAction="#returnHotelCheck" prefHeight="32.0" prefWidth="50.0" text="返回" />
+                  <ComboBox fx:id="roomInput" focusTraversable="false" layoutX="366.0" layoutY="217.0" prefHeight="31.0" prefWidth="115.0" />
+                  <HBox alignment="CENTER_LEFT" layoutX="515.0" layoutY="273.0" prefHeight="36.0" prefWidth="139.0">
+                     <children>
+                        <ComboBox fx:id="maxLevelInput" focusTraversable="false" prefHeight="31.0" prefWidth="79.0" />
+                     </children>
+                  </HBox>
+                  <ComboBox fx:id="minLevelInput" focusTraversable="false" layoutX="365.0" layoutY="276.0" prefHeight="31.0" prefWidth="79.0" />
+                  <DatePicker editable="false" focusTraversable="false" layoutX="371.0" layoutY="336.0" prefHeight="27.0" prefWidth="150" />
+                  <DatePicker editable="false" focusTraversable="false" layoutX="371.0" layoutY="366.0" prefHeight="30.0" prefWidth="150" />
+                  <ComboBox fx:id="minScoreInput" focusTraversable="false" layoutX="372.0" layoutY="421.0" prefHeight="31.0" prefWidth="79.0" />
+                  <ComboBox fx:id="maxScoreInput" focusTraversable="false" layoutX="509.0" layoutY="421.0" prefHeight="31.0" prefWidth="79.0" />
+                  <TextField fx:id="minpriceInput" focusTraversable="false" layoutX="372.0" layoutY="458.0" prefHeight="29.0" prefWidth="72.0" text="100" />
+                  <TextField fx:id="maxpriceInput" focusTraversable="false" layoutX="515.0" layoutY="458.0" prefHeight="24.0" prefWidth="70.0" text="300" />
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+   </children>
+</StackPane>

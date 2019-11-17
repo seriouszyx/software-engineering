@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="895.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.webManagerUI.controller.MarketerController">
+   <children>
+      <ImageView fx:id="rightImage1" fitHeight="310.0" fitWidth="895.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../png/webManager/mainWebMarketerAfter.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rightImage" fitHeight="291.0" fitWidth="895.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../png/webManager/mainWebMarketerAfter.png" />
+         </image></ImageView>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="895.0">
+         <children>
+            <TextField fx:id="inputID" blendMode="MULTIPLY" focusTraversable="false" layoutX="386.0" layoutY="121.0" prefHeight="28.0" prefWidth="123.0">
+               <font>
+                  <Font size="16.0" />
+               </font></TextField>
+            <Button blendMode="MULTIPLY" layoutX="557.0" layoutY="123.0" mnemonicParsing="false" onAction="#search" text="查询" />
+            <Pane fx:id="modifyPane" layoutX="274.0" layoutY="180.0" prefHeight="105.0" prefWidth="444.0" visible="false">
+               <children>
+                  <Button blendMode="MULTIPLY" layoutX="323.0" layoutY="61.0" mnemonicParsing="false" onAction="#saveModify" prefHeight="23.0" prefWidth="88.0" text="保存" />
+                  <Label fx:id="marketerID2" layoutX="119.0" layoutY="14.0" prefHeight="30.0" prefWidth="116.0" text="123">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Button blendMode="MULTIPLY" layoutX="323.0" layoutY="23.0" mnemonicParsing="false" onAction="#cancelModify" prefHeight="23.0" prefWidth="88.0" text="返回" />
+                  <PasswordField fx:id="password2" blendMode="MULTIPLY" layoutX="110.0" layoutY="51.0" prefHeight="39.0" prefWidth="182.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+            </Pane>
+            <Pane fx:id="marketerInfoPane" layoutX="321.0" layoutY="164.0" prefHeight="111.0" prefWidth="415.0" visible="false">
+               <children>
+                  <Button blendMode="MULTIPLY" focusTraversable="false" layoutX="279.0" layoutY="40.0" mnemonicParsing="false" onAction="#modifyHotel" prefHeight="23.0" prefWidth="88.0" text="修改" />
+                  <Label fx:id="marketerID" layoutX="72.0" layoutY="33.0" text="123123">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label fx:id="password" layoutX="72.0" layoutY="70.0" prefHeight="35.0" prefWidth="170.0" text="*********">
+                     <font>
+                        <Font size="27.0" />
+                     </font></Label>
+               </children>
+            </Pane>
+            <Button blendMode="MULTIPLY" focusTraversable="false" layoutX="391.0" layoutY="401.0" mnemonicParsing="false" onAction="#addMarketer" prefHeight="23.0" prefWidth="88.0" text="添加" />
+            <Pane fx:id="pane" layoutX="297.0" layoutY="431.0" prefHeight="153.0" prefWidth="425.0" visible="false">
+               <children>
+                  <GridPane layoutX="2.0" layoutY="5.0" prefHeight="85.0" prefWidth="415.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.0" minWidth="10.0" prefWidth="83.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="332.0" minWidth="10.0" prefWidth="332.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="yourID" prefHeight="20.0" prefWidth="252.0" text="你的账号：" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="16.0" />
+                           </font></Label>
+                        <Label fx:id="yourPassword" prefHeight="20.0" prefWidth="294.0" text="你的账号：" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="16.0" />
+                           </font></Label>
+                     </children>
+                  </GridPane>
+                  <Button blendMode="MULTIPLY" focusTraversable="false" layoutX="91.0" layoutY="99.0" mnemonicParsing="false" onAction="#cancel" prefHeight="23.0" prefWidth="88.0" text="确认" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

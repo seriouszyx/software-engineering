@@ -1,4 +1,0 @@
-Ivanca;123456;M00001;0
-Jack;123456;M00002;0
-JackJones;Monica;M00003;0
-default;555555;M00004;0

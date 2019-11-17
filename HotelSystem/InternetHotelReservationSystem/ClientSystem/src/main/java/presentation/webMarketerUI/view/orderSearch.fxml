@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="895.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.webMarketerUI.controller.OrderController">
+   <children>
+      <ImageView fx:id="rightImage" fitHeight="601.0" fitWidth="895.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane fx:id="searchPane" minHeight="0.0" minWidth="0.0" prefHeight="601.0" prefWidth="895.0">
+         <children>
+            <Label layoutX="404.0" layoutY="14.0" prefHeight="39.0" text="异常订单" AnchorPane.topAnchor="14.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Separator layoutY="60.0" prefHeight="3.0" prefWidth="895.0" />
+            <Label layoutX="280.0" layoutY="151.0" prefHeight="36.0" text="订单编号：" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+            <TextField fx:id="searchID" focusTraversable="false" layoutX="384.0" layoutY="155.0" prefHeight="29.0" prefWidth="155.0" />
+            <Button focusTraversable="false" layoutX="576.0" layoutY="154.0" mnemonicParsing="false" onAction="#searchOneOrder" text="查询" />
+            <Label layoutX="280.0" layoutY="411.0" prefHeight="23.0" prefWidth="48.0" text="日期：" />
+            <DatePicker fx:id="searchDate" editable="false" focusTraversable="false" layoutX="372.0" layoutY="408.0" prefHeight="29.0" prefWidth="167.0" />
+            <Button focusTraversable="false" layoutX="576.0" layoutY="408.0" mnemonicParsing="false" onAction="#searchDateOrder" text="查询" />
+            <Separator layoutY="299.0" prefHeight="3.0" prefWidth="895.0" />
+         </children>
+      </AnchorPane>
+      <Pane fx:id="orderDetail" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="895.0" visible="false">
+         <children>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="601.0" prefWidth="895.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="403.0" layoutY="14.0" prefHeight="39.0" prefWidth="90.0" text="订单详情" AnchorPane.topAnchor="14.0">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutY="74.0" prefHeight="504.0" prefWidth="895.0">
+                     <children>
+                        <Label layoutX="567.0" layoutY="131.0" text="价格：" />
+                        <Label fx:id="detail_price" layoutX="616.0" layoutY="131.0" text="610" />
+                        <Button fx:id="detail_state" alignment="CENTER" focusTraversable="false" layoutX="529.0" layoutY="57.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="54.0" prefWidth="167.0" text="未执行" />
+                        <GridPane layoutX="448.0" layoutY="252.0" prefHeight="80.0" prefWidth="328.0">
+                           <children>
+                              <Label text="最晚执行时间：" GridPane.rowIndex="1" />
+                              <Label fx:id="detail_expectTime" text="2016-10-2 14：00" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label fx:id="detail_createTime" text="2016-10-2 14：00" GridPane.columnIndex="1" />
+                              <Label text="生成时间：" />
+                              <Label text="预计离开时间：" GridPane.rowIndex="2" />
+                              <Label fx:id="detail_expectLeaveTime" text="2016-10-2 14：00" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="119.0" minWidth="10.0" prefWidth="71.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="10.0" prefWidth="172.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane layoutX="174.0" layoutY="114.0" prefHeight="54.0" prefWidth="356.0">
+                           <children>
+                              <Label text="酒店：" />
+                              <Label text="地址：" GridPane.rowIndex="1" />
+                              <Label fx:id="detail_Hotel" text="新街口三里步汉庭" GridPane.columnIndex="1" />
+                              <Label fx:id="detail_address" text="南京市玄武区新街口三里巷" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="0.0" prefWidth="46.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="352.0" minWidth="10.0" prefWidth="310.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="34.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="22.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <Label layoutX="174.0" layoutY="64.0" text="订单编号：" />
+                        <Label fx:id="detail_ID" layoutX="263.0" layoutY="64.0" text="123142345" />
+                        <GridPane layoutX="176.0" layoutY="209.0" prefHeight="155.0" prefWidth="227.0">
+                           <children>
+                              <Label prefHeight="35.0" prefWidth="98.0" text="房间类型：" />
+                              <Label text="房间数：" GridPane.rowIndex="1" />
+                              <Label text="入住人数：" GridPane.rowIndex="2" />
+                              <Label text="联系方式：" GridPane.rowIndex="4" />
+                              <Label text="入住人姓名：" GridPane.rowIndex="3" />
+                              <Label fx:id="detail_phone" text="12345678904" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <Label fx:id="detail_personName" text="GGG" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Label fx:id="detail_personNum" text="3" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label fx:id="detail_roomNum" text="3" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label fx:id="detail_roomType" text="大床房" GridPane.columnIndex="1" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="74.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="130.0" minWidth="10.0" prefWidth="126.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <Label layoutX="174.0" layoutY="384.0" text="特别要求：" />
+                        <Label fx:id="detail_message" layoutX="263.0" layoutY="386.0" maxHeight="299.0" prefWidth="299.0" text="三个孩子，不要窗户ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss" wrapText="true" />
+                        <Pane fx:id="cancelOrderPane" layoutX="569.0" layoutY="154.0" prefHeight="54.0" prefWidth="167.0">
+                           <children>
+                              <ComboBox fx:id="cancelPercent" focusTraversable="false" layoutY="11.0" prefHeight="31.0" prefWidth="97.0" />
+                              <Button focusTraversable="false" layoutX="117.0" layoutY="12.0" mnemonicParsing="false" onAction="#cancelAbnormalOrder" text="撤销" />
+                           </children>
+                        </Pane>
+                        <Button fx:id="back1" focusTraversable="false" layoutX="505.0" layoutY="166.0" mnemonicParsing="false" onAction="#cancelDetail1" text="返回" />
+                        <Button fx:id="back2" focusTraversable="false" layoutX="505.0" layoutY="166.0" mnemonicParsing="false" onAction="#cancelDetail2" text="返回" />
+                     </children>
+                  </Pane>
+                  <Separator layoutY="60.0" prefHeight="3.0" prefWidth="895.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="orderCheck" prefHeight="601.0" prefWidth="895.0" visible="false">
+         <children>
+            <Button focusTraversable="false" layoutX="786.0" layoutY="70.0" mnemonicParsing="false" onAction="#OrderDetail" text="查看详情" />
+            <Separator layoutY="60.0" prefHeight="3.0" prefWidth="895.0" />
+            <Button layoutX="172.0" layoutY="70.0" mnemonicParsing="false" onAction="#searchAbnormalOrder" text="异常订单" />
+            <Button layoutX="43.0" layoutY="70.0" mnemonicParsing="false" onAction="#cancelCheck" text="返回" />
+            <Label alignment="CENTER" layoutX="403.0" layoutY="14.0" prefHeight="39.0" prefWidth="90.0" text="订单列表">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button layoutX="308.0" layoutY="70.0" mnemonicParsing="false" onAction="#searchUnexecutedOrder" text="未执行订单" />
+            <Pane fx:id="cancelOrderPaneInCheck" layoutX="516.0" layoutY="58.0" prefHeight="54.0" prefWidth="167.0">
+               <children>
+                  <ComboBox fx:id="cancelPercentInCheck" focusTraversable="false" layoutY="11.0" prefHeight="31.0" prefWidth="97.0" />
+                  <Button focusTraversable="false" layoutX="117.0" layoutY="12.0" mnemonicParsing="false" onAction="#cancelAbnormalOrderInCheck" text="撤销" />
+               </children>
+            </Pane>
+            <TableView fx:id="table" focusTraversable="false" layoutY="117.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="486.0" prefWidth="895.0">
+               <columns>
+                  <TableColumn fx:id="orderIDColumn" prefWidth="104.0" text="订单编号" />
+                  <TableColumn fx:id="guestIDColumn" prefWidth="100.0" text="客户编号" />
+                  <TableColumn fx:id="nameColumn" prefWidth="100.0" text="客户姓名" />
+                  <TableColumn fx:id="hotelNameColumn" prefWidth="105.0" text="酒店名" />
+                  <TableColumn fx:id="addressColumn" prefWidth="133.0" text="地址" visible="false" />
+                  <TableColumn fx:id="checkInTimeColumn" prefWidth="169.0" text="预计入住时间" />
+                  <TableColumn fx:id="checkOutTimeColumn" prefWidth="147.0" text="预计离开时间" />
+                  <TableColumn fx:id="priceColumn" minWidth="0.0" prefWidth="67.0" resizable="false" text="价格" />
+                  <TableColumn fx:id="stateColumn" prefWidth="100.0" text="订单状态" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

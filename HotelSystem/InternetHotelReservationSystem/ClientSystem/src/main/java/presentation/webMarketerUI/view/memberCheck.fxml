@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="895.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.webMarketerUI.controller.MemberController">
+   <children>
+      <ImageView fx:id="rightImage" fitHeight="601.0" fitWidth="895.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane fx:id="marketCheckPane" minHeight="0.0" minWidth="0.0" prefHeight="601.0" prefWidth="895.0">
+         <children>
+            <GridPane layoutX="307.0" layoutY="170.0" prefHeight="309.0" prefWidth="345.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="10.0" prefWidth="109.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="206.0" minWidth="10.0" prefWidth="123.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="206.0" minWidth="10.0" prefWidth="113.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="credit1" prefHeight="36.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="1" />
+                  <Label fx:id="name5" prefHeight="36.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.rowIndex="4" />
+                  <Label fx:id="name4" prefHeight="36.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.rowIndex="3" />
+                  <Label fx:id="name3" prefHeight="36.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.rowIndex="2" />
+                  <Label fx:id="name2" prefHeight="36.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.rowIndex="1" />
+                  <Label fx:id="credit5" prefHeight="36.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label fx:id="credit4" prefHeight="36.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label fx:id="credit3" prefHeight="36.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="credit2" prefHeight="36.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="name1" prefHeight="36.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+                  <Label fx:id="discount5" prefHeight="36.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Label fx:id="discount4" prefHeight="36.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Label fx:id="discount3" prefHeight="36.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Label fx:id="discount2" prefHeight="36.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label fx:id="discount1" prefHeight="36.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="2" />
+                  <Label fx:id="name8" prefHeight="36.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.rowIndex="7" />
+                  <Label fx:id="name7" prefHeight="36.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.rowIndex="6" />
+                  <Label fx:id="name6" prefHeight="36.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.rowIndex="5" />
+                  <Label fx:id="credit8" prefHeight="36.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Label fx:id="credit7" prefHeight="36.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label fx:id="credit6" prefHeight="36.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label fx:id="discount8" prefHeight="36.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                  <Label fx:id="discount6" prefHeight="36.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <Label fx:id="discount7" prefHeight="36.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+               </children>
+            </GridPane>
+            <Label layoutX="382.0" layoutY="14.0" text="会员等级查看" AnchorPane.topAnchor="14.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Separator layoutY="60.0" prefHeight="3.0" prefWidth="895.0" />
+            <Button fx:id="modifyButton" layoutX="423.0" layoutY="511.0" mnemonicParsing="false" onAction="#modifyMarket" text="修改" />
+            <Label layoutX="307.0" layoutY="114.0" prefHeight="36.0" text="等级" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+            <Label layoutX="411.0" layoutY="114.0" prefHeight="36.0" text="所需信用值" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+            <Label layoutX="546.0" layoutY="114.0" prefHeight="36.0" text="折扣" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+         </children>
+      </AnchorPane>
+      <Pane fx:id="marketModifyPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="895.0" visible="false">
+         <children>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="601.0" prefWidth="895.0">
+               <children>
+                  <GridPane layoutX="284.0" layoutY="169.0" prefHeight="309.0" prefWidth="315.0">
+                     <children>
+                        <TextField fx:id="modifyDiscount1" focusTraversable="false" GridPane.columnIndex="4" />
+                        <TextField fx:id="modifyDiscount2" focusTraversable="false" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <TextField fx:id="modifyDiscount3" focusTraversable="false" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <TextField fx:id="modifyDiscount4" focusTraversable="false" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                        <TextField fx:id="modifyDiscount5" focusTraversable="false" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                        <TextField fx:id="market5" alignment="CENTER" focusTraversable="false" visible="false" GridPane.rowIndex="4" />
+                        <TextField fx:id="market4" alignment="CENTER" focusTraversable="false" visible="false" GridPane.rowIndex="3" />
+                        <TextField fx:id="market3" alignment="CENTER" focusTraversable="false" visible="false" GridPane.rowIndex="2" />
+                        <TextField fx:id="market2" alignment="CENTER" focusTraversable="false" visible="false" GridPane.rowIndex="1" />
+                        <TextField fx:id="market1" alignment="CENTER" focusTraversable="false" visible="false" />
+                        <TextField fx:id="needCredit5" alignment="CENTER" focusTraversable="false" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <TextField fx:id="needCredit4" alignment="CENTER" focusTraversable="false" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <TextField fx:id="needCredit3" alignment="CENTER" focusTraversable="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <TextField fx:id="needCredit2" alignment="CENTER" focusTraversable="false" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField fx:id="needCredit1" alignment="CENTER" focusTraversable="false" GridPane.columnIndex="2" />
+                        <TextField fx:id="market8" alignment="CENTER" focusTraversable="false" visible="false" GridPane.rowIndex="7" />
+                        <TextField fx:id="market7" alignment="CENTER" focusTraversable="false" visible="false" GridPane.rowIndex="6" />
+                        <TextField fx:id="market6" alignment="CENTER" focusTraversable="false" visible="false" GridPane.rowIndex="5" />
+                        <TextField fx:id="needCredit8" alignment="CENTER" focusTraversable="false" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                        <TextField fx:id="needCredit7" alignment="CENTER" focusTraversable="false" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                        <TextField fx:id="needCredit6" alignment="CENTER" focusTraversable="false" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                        <TextField fx:id="modifyDiscount8" focusTraversable="false" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                        <TextField fx:id="modifyDiscount7" focusTraversable="false" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                        <TextField fx:id="modifyDiscount6" focusTraversable="false" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="10.0" prefWidth="51.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="10.0" prefWidth="82.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="1.0" prefWidth="48.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="206.0" minWidth="10.0" prefWidth="70.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <Label layoutX="382.0" layoutY="14.0" text="会员等级查看" AnchorPane.topAnchor="14.0">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutY="60.0" prefHeight="3.0" prefWidth="895.0" />
+                  <Button focusTraversable="false" layoutX="486.0" layoutY="511.0" mnemonicParsing="false" onAction="#saveModify" text="保存" />
+                  <Label layoutX="307.0" layoutY="114.0" prefHeight="36.0" text="等级" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+                  <Label layoutX="411.0" layoutY="114.0" prefHeight="36.0" text="所需信用值" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+                  <Button focusTraversable="false" layoutX="361.0" layoutY="511.0" mnemonicParsing="false" onAction="#cancelModify" text="取消" />
+                  <Label layoutX="546.0" layoutY="114.0" prefHeight="36.0" text="折扣" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+   </children>
+</Pane>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="895.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.webMarketerUI.controller.OrderController">
+   <children>
+      <AnchorPane fx:id="searchPane" blendMode="MULTIPLY" minHeight="0.0" minWidth="0.0" prefHeight="601.0" prefWidth="895.0">
+         <children>
+            <ImageView fx:id="rightImage" blendMode="MULTIPLY" fitHeight="601.0" fitWidth="895.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../png%20(1)/webMarketer/mainOrderCheck.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="searchID" blendMode="MULTIPLY" focusTraversable="false" layoutX="378.0" layoutY="187.0" prefHeight="29.0" prefWidth="155.0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></TextField>
+            <Button blendMode="MULTIPLY" focusTraversable="false" layoutX="586.0" layoutY="189.0" mnemonicParsing="false" onAction="#searchOneOrder" text="查询" />
+            <DatePicker fx:id="searchDate" blendMode="MULTIPLY" editable="false" focusTraversable="false" layoutX="372.0" layoutY="378.0" prefHeight="29.0" prefWidth="167.0" />
+            <Button blendMode="MULTIPLY" focusTraversable="false" layoutX="586.0" layoutY="378.0" mnemonicParsing="false" onAction="#searchDateOrder" text="查询" />
+         </children>
+      </AnchorPane>
+      <Pane fx:id="orderDetail" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="895.0" visible="false">
+         <children>
+            <ImageView fx:id="rightImage1" fitHeight="601.0" fitWidth="895.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../png%20(1)/webMarketer/mainOrderDetail.png" />
+               </image>
+            </ImageView>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="601.0" prefWidth="895.0">
+               <children>
+                  <Pane layoutY="74.0" prefHeight="504.0" prefWidth="895.0">
+                     <children>
+                        <Label fx:id="detail_price" layoutX="252.0" layoutY="260.0" text="610">
+                           <font>
+                              <Font size="21.0" />
+                           </font></Label>
+                        <Button fx:id="detail_state" alignment="CENTER" blendMode="MULTIPLY" focusTraversable="false" layoutX="591.0" layoutY="101.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="86.0" prefWidth="97.0" text="未执行" />
+                        <GridPane layoutX="674.0" layoutY="354.0" prefHeight="86.0" prefWidth="207.0">
+                           <children>
+                              <Label fx:id="detail_expectTime" text="2016-10-2 14：00" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></Label>
+                              <Label fx:id="detail_createTime" text="2016-10-2 14：00">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font></Label>
+                              <Label fx:id="detail_expectLeaveTime" text="2016-10-2 14：00" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font></Label>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="10.0" prefWidth="172.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <Label fx:id="detail_ID" layoutX="258.0" layoutY="91.0" text="123142345">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label fx:id="detail_message" layoutX="248.0" layoutY="420.0" maxHeight="299.0" prefWidth="280.0" text="三个孩子，不要窗户ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Pane fx:id="cancelOrderPane" blendMode="MULTIPLY" layoutX="591.0" layoutY="240.0" prefHeight="54.0" prefWidth="167.0">
+                           <children>
+                              <ComboBox fx:id="cancelPercent" focusTraversable="false" layoutY="11.0" prefHeight="31.0" prefWidth="97.0" />
+                              <Button focusTraversable="false" layoutX="117.0" layoutY="12.0" mnemonicParsing="false" onAction="#cancelAbnormalOrder" text="撤销" />
+                           </children>
+                        </Pane>
+                        <Button fx:id="back1" blendMode="MULTIPLY" focusTraversable="false" layoutX="512.0" layoutY="252.0" mnemonicParsing="false" onAction="#cancelDetail1" text="返回" />
+                        <Button fx:id="back2" blendMode="MULTIPLY" focusTraversable="false" layoutX="512.0" layoutY="252.0" mnemonicParsing="false" onAction="#cancelDetail2" text="返回" />
+                        <Label fx:id="detail_roomType" layoutX="253.0" layoutY="200.0" text="大床房">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="detail_roomNum" layoutX="258.0" layoutY="230.0" text="3">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="detail_personNum" layoutX="257.0" layoutY="311.0" text="3">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="detail_personName" layoutX="254.0" layoutY="341.0" text="GGG">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="detail_phone" layoutX="252.0" layoutY="371.0" text="12345678904">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="detail_address" layoutX="250.0" layoutY="171.0" text="南京市玄武区新街口三里巷">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="detail_Hotel" layoutX="252.0" layoutY="141.0" text="新街口三里步汉庭">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="orderCheck" prefHeight="601.0" prefWidth="895.0" visible="false">
+         <children>
+            <ImageView fx:id="rightImage2" fitHeight="601.0" fitWidth="895.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../png%20(1)/webMarketer/mainOrderList.png" />
+               </image>
+            </ImageView>
+            <Button blendMode="MULTIPLY" layoutX="144.0" layoutY="112.0" mnemonicParsing="false" onAction="#searchAbnormalOrder" text="异常订单">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Button>
+            <Button blendMode="MULTIPLY" focusTraversable="false" layoutX="759.0" layoutY="112.0" mnemonicParsing="false" onAction="#OrderDetail" text="查看详情">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button blendMode="MULTIPLY" layoutX="58.0" layoutY="112.0" mnemonicParsing="false" onAction="#cancelCheck" text="返回">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button blendMode="MULTIPLY" layoutX="246.0" layoutY="112.0" mnemonicParsing="false" onAction="#searchUnexecutedOrder" text="未执行订单">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Pane fx:id="cancelOrderPaneInCheck" blendMode="MULTIPLY" layoutX="527.0" layoutY="100.0" prefHeight="54.0" prefWidth="167.0">
+               <children>
+                  <ComboBox fx:id="cancelPercentInCheck" focusTraversable="false" layoutY="11.0" prefHeight="31.0" prefWidth="97.0" />
+                  <Button focusTraversable="false" layoutX="117.0" layoutY="12.0" mnemonicParsing="false" onAction="#cancelAbnormalOrderInCheck" text="撤销">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font></Button>
+               </children>
+            </Pane>
+            <TableView fx:id="table" blendMode="MULTIPLY" focusTraversable="false" layoutX="28.0" layoutY="158.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="423.0" prefWidth="839.0">
+               <columns>
+                  <TableColumn fx:id="orderIDColumn" prefWidth="102.0" text="订单编号" />
+                  <TableColumn fx:id="guestIDColumn" prefWidth="97.0" text="客户编号" />
+                  <TableColumn fx:id="nameColumn" prefWidth="105.0" text="客户姓名" />
+                  <TableColumn fx:id="hotelNameColumn" prefWidth="105.0" text="酒店名" />
+                  <TableColumn fx:id="addressColumn" prefWidth="133.0" text="地址" visible="false" />
+                  <TableColumn fx:id="checkInTimeColumn" prefWidth="137.0" text="预计入住时间" />
+                  <TableColumn fx:id="checkOutTimeColumn" prefWidth="138.0" text="预计离开时间" />
+                  <TableColumn fx:id="priceColumn" minWidth="0.0" prefWidth="69.0" resizable="false" text="价格" />
+                  <TableColumn fx:id="stateColumn" prefWidth="88.0" text="订单状态" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

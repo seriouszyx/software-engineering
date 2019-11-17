@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.guestUI.controller.GuestInfoController">
+   <children>
+      <Pane fx:id="guestCheck" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="895.0">
+         <children>
+            <ImageView fx:id="rightImage" fitHeight="601.0" fitWidth="895.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../png%20(1)/guest/mainGuestInfo.png" />
+               </image>
+            </ImageView>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="601.0" prefWidth="895.0">
+               <children>
+                  <Button blendMode="MULTIPLY" focusTraversable="false" layoutX="396.0" layoutY="461.0" mnemonicParsing="false" onMouseClicked="#modifyGuestInfo" text="修改" />
+                  <Label fx:id="guestID" layoutX="341.0" layoutY="152.0" prefHeight="41.0" prefWidth="179.0" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="password" focusTraversable="false" layoutX="7.0" layoutY="125.0" prefHeight="54.0" prefWidth="120.0" textAlignment="CENTER" textOverrun="CLIP" visible="false" wrapText="true" />
+                  <Label fx:id="nickname" layoutX="341.0" layoutY="248.0" prefHeight="30.0" prefWidth="210.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="name" layoutX="341.0" layoutY="218.0" prefHeight="30.0" prefWidth="210.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="phone" layoutX="341.0" layoutY="302.0" prefHeight="41.0" prefWidth="210.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="credit" layoutX="341.0" layoutY="362.0" prefHeight="41.0" prefWidth="210.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <Pane fx:id="guestModify" blendMode="MULTIPLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="895.0" visible="false">
+         <children>
+            <ImageView fx:id="rightImage1" fitHeight="601.0" fitWidth="895.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../png%20(1)/guest/mainGuestInfoEdit.png" />
+               </image>
+            </ImageView>
+            <Button blendMode="MULTIPLY" focusTraversable="false" layoutX="448.0" layoutY="520.0" mnemonicParsing="false" onMouseClicked="#saveGuestInfo" prefHeight="26.0" text="保存" />
+            <Button blendMode="MULTIPLY" focusTraversable="false" layoutX="341.0" layoutY="520.0" mnemonicParsing="false" onMouseClicked="#cancer" prefHeight="26.0" text="取消" />
+            <PasswordField fx:id="password2" blendMode="MULTIPLY" focusTraversable="false" layoutX="339.0" layoutY="425.0" />
+            <PasswordField fx:id="password3" blendMode="MULTIPLY" focusTraversable="false" layoutX="339.0" layoutY="458.0" />
+            <TextField fx:id="phone2" blendMode="MULTIPLY" focusTraversable="false" layoutX="339.0" layoutY="304.0" prefHeight="35.0" prefWidth="201.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="nickname2" blendMode="MULTIPLY" focusTraversable="false" layoutX="339.0" layoutY="248.0" prefHeight="30.0" prefWidth="162.0" />
+            <TextField fx:id="name2" blendMode="MULTIPLY" focusTraversable="false" layoutX="339.0" layoutY="214.0" prefHeight="30.0" prefWidth="162.0" />
+            <Label fx:id="credit1" layoutX="341.0" layoutY="362.0" prefHeight="41.0" prefWidth="210.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="guestID1" layoutX="341.0" layoutY="152.0" prefHeight="41.0" prefWidth="179.0" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</StackPane>

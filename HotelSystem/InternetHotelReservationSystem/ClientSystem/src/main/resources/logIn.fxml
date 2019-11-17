@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="mainPane" prefHeight="601.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.signUpUI.controller.LogInViewController">
+   <children>
+      <AnchorPane prefHeight="601.0" prefWidth="1000.0">
+         <children>
+            <ImageView fx:id="background" fitHeight="601.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../mainLogIn.png" />
+               </image>
+            </ImageView>
+            <Pane fx:id="registerPane" layoutX="335.0" layoutY="201.0" prefHeight="393.0" prefWidth="330.0" visible="false">
+               <children>
+                  <GridPane layoutX="112.0" layoutY="72.0" prefHeight="250.0" prefWidth="183.0">
+                     <children>
+                        <TextField fx:id="name" blendMode="MULTIPLY" prefHeight="23.0" prefWidth="178.0" />
+                        <TextField fx:id="nickName" blendMode="MULTIPLY" prefHeight="30.0" prefWidth="311.0" GridPane.rowIndex="1" />
+                        <TextField fx:id="phone" blendMode="MULTIPLY" prefHeight="23.0" prefWidth="178.0" GridPane.rowIndex="4" />
+                        <PasswordField fx:id="password3" blendMode="MULTIPLY" GridPane.rowIndex="3" />
+                        <PasswordField fx:id="password2" blendMode="MULTIPLY" GridPane.rowIndex="2" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="186.0" minWidth="10.0" prefWidth="125.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <ImageView fx:id="registerBT2" fitHeight="40.0" fitWidth="80.0" layoutX="105.0" layoutY="330.0" onMouseClicked="#register" onMouseEntered="#enter1" onMouseExited="#excited1" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../../../../../../../logIn/signUp.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="logInPane" layoutX="330.0" layoutY="183.0" prefHeight="355.0" prefWidth="330.0">
+               <children>
+                  <TextField fx:id="ID" blendMode="MULTIPLY" focusTraversable="false" layoutX="96.0" layoutY="148.0" prefHeight="30.0" prefWidth="200.0" />
+                  <PasswordField fx:id="password" blendMode="MULTIPLY" focusTraversable="false" layoutX="96.0" layoutY="198.0" prefHeight="30.0" prefWidth="200.0" />
+                  <ImageView fx:id="loginBt" fitHeight="40.0" fitWidth="80.0" layoutX="127.0" layoutY="281.0" onMouseClicked="#logIn" onMouseEntered="#enterLoginBt" onMouseExited="#exitedLoginBt" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@../../../../../../../../../logIn/logIn.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="rmiPane" layoutX="203.0" layoutY="195.0" prefHeight="355.0" prefWidth="658.0" visible="false">
+               <children>
+                  <Label layoutX="54.0" layoutY="125.0" />
+                  <Label layoutX="129.0" layoutY="140.0" />
+                  <TextField fx:id="rmiPortText" blendMode="MULTIPLY" focusTraversable="false" layoutX="254.0" layoutY="187.0" prefHeight="30.0" prefWidth="239.0" />
+                  <TextField fx:id="rmiIpText" blendMode="MULTIPLY" focusTraversable="false" layoutX="254.0" layoutY="135.0" prefHeight="30.0" prefWidth="239.0" />
+                  <ImageView fx:id="rmiBT2" fitHeight="40.0" fitWidth="80.0" layoutX="254.0" layoutY="285.0" onMouseClicked="#link" onMouseEntered="#enter2" onMouseExited="#excited2" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../../../../../../../logIn/connect.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fx:id="rmiBt" fitHeight="49.0" fitWidth="106.0" layoutX="48.0" layoutY="472.0" onMouseClicked="#openRMI" onMouseEntered="#enterRMIBt" onMouseExited="#exitedRMIBt" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../logIn/changeToRMI.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="registerBT" fitHeight="57.0" fitWidth="98.0" layoutX="48.0" layoutY="527.0" onMouseClicked="#openRegister" onMouseEntered="#enterRegisterBt" onMouseExited="#exitedRegisterBt" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../logIn/changeToSignUp.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="logInBT" fitHeight="56.0" fitWidth="98.0" layoutX="48.0" layoutY="528.0" onMouseClicked="#openLogIn" onMouseEntered="#enterLoginBt2" onMouseExited="#exitedLoginBt2" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../../../../../../../../logIn/changeToLogIn.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="601.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.hotelWorkerUI.controller.HotelWorkerViewController">
+   <children>
+      <AnchorPane fx:id="right" layoutX="105.0">
+         <children>
+            <AnchorPane fx:id="mainPane" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fx:id="rightImage" fitHeight="601.0" fitWidth="895.0" layoutX="-2.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane maxHeight="601.0" maxWidth="105.0" minHeight="601.0" minWidth="105.0" prefHeight="601.0" prefWidth="105.0">
+         <children>
+            <ImageView fx:id="leftImage" fitHeight="601.0" fitWidth="105.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="infoBt" alignment="CENTER" focusTraversable="false" layoutY="74.0" prefHeight="35.0" prefWidth="105.0" text="ASI" wrapText="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="hotelBT" fitHeight="35.0" fitWidth="105.0" layoutY="130.0" onMouseClicked="#openHotelInfo" onMouseEntered="#enter1" onMouseExited="#exited1" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="orderBT" fitHeight="35.0" fitWidth="105.0" layoutY="210.0" onMouseClicked="#openOrderInfo" onMouseEntered="#enter2" onMouseExited="#exited2" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="offlineBT" fitHeight="35.0" fitWidth="105.0" layoutY="290.0" onMouseClicked="#openOffline" onMouseEntered="#enter3" onMouseExited="#exited3" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="roomBT" fitHeight="35.0" fitWidth="105.0" layoutY="370.0" onMouseClicked="#openRoomInfo" onMouseEntered="#enter4" onMouseExited="#exited4" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="promotionBT" fitHeight="35.0" fitWidth="105.0" layoutY="450.0" onMouseClicked="#openPromotion" onMouseEntered="#enter5" onMouseExited="#exited5" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="signUpBT" fitHeight="35.0" fitWidth="105.0" layoutY="515.0" onMouseClicked="#logout" onMouseEntered="#enter6" onMouseExited="#exited6" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="mainBT" fitHeight="35.0" fitWidth="105.0" layoutY="555.0" onMouseClicked="#openMain" onMouseEntered="#enter7" onMouseExited="#exited7" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

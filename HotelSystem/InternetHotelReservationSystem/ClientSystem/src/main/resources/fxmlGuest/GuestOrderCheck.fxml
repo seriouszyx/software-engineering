@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.guestUI.controller.OrderCheckController">
+   <children>
+      <Pane fx:id="orderDetail" blendMode="MULTIPLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="895.0" visible="false">
+         <children>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="601.0" prefWidth="895.0">
+               <children>
+                  <Pane fx:id="detailPane" layoutX="-1.0" layoutY="89.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="504.0" prefWidth="895.0">
+                     <children>
+                        <ImageView fx:id="rightImage1" fitHeight="690.0" fitWidth="895.0" layoutY="-89.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../png%20(1)/guest/mainOrderDetail.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="detail_price" layoutX="255.0" layoutY="242.0" text="610" />
+                        <Button fx:id="detail_state" alignment="CENTER" blendMode="MULTIPLY" focusTraversable="false" layoutX="599.0" layoutY="57.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="97.0" prefWidth="97.0" text="未执行" />
+                        <GridPane layoutX="677.0" layoutY="275.0" prefHeight="154.0" prefWidth="210.0">
+                           <children>
+                              <Label fx:id="detail_expectTime" text="2016-10-2 14：00" GridPane.rowIndex="1" />
+                              <Label fx:id="detail_createTime" text="2016-10-2 14：00" />
+                              <Label fx:id="detail_checkOutTime" text="2016-10-2 14：00" GridPane.rowIndex="4" />
+                              <Label fx:id="detail_checkInTime" text="2016-10-2 14：00" GridPane.rowIndex="3" />
+                              <Label fx:id="detail_expectLeaveTime" text="2016-10-2 14：00" GridPane.rowIndex="2" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="10.0" prefWidth="172.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <Label fx:id="detail_ID" layoutX="255.0" layoutY="74.0" text="123142345" />
+                        <Label fx:id="detail_message" layoutX="255.0" layoutY="412.0" maxHeight="299.0" prefWidth="271.0" text="三个孩子，不要窗户ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss" wrapText="true" />
+                        <Button blendMode="MULTIPLY" focusTraversable="false" layoutX="671.0" layoutY="193.0" mnemonicParsing="false" onAction="#cancel" text="返回" />
+                        <Button fx:id="undoBt2" blendMode="MULTIPLY" focusTraversable="false" layoutX="574.0" layoutY="193.0" mnemonicParsing="false" onAction="#undoInDetail" text="撤销" />
+                        <Label layoutX="159.0" layoutY="380.0" text="房间号：">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="detail_roomNumber" layoutX="255.0" layoutY="381.0" text="GGG" />
+                        <Label fx:id="detail_phone" layoutX="255.0" layoutY="353.0" text="12345678904" />
+                        <Label fx:id="detail_personName" layoutX="255.0" layoutY="325.0" text="GGG" />
+                        <Label fx:id="detail_personNum" layoutX="255.0" layoutY="295.0" text="3" />
+                        <Label fx:id="detail_roomNum" layoutX="255.0" layoutY="215.0" text="3" />
+                        <Label fx:id="detail_roomType" layoutX="255.0" layoutY="188.0" text="大床房" />
+                        <Label fx:id="detail_Hotel" layoutX="255.0" layoutY="126.0" text="新街口三里步汉庭" />
+                        <Label fx:id="detail_address" layoutX="255.0" layoutY="157.0" text="南京市玄武区新街口三里巷" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="commentPane" blendMode="MULTIPLY" layoutX="-1.0" prefHeight="601.0" prefWidth="895.0" visible="false">
+                     <children>
+                        <ImageView fx:id="rightImage2" fitHeight="690.0" fitWidth="895.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../png%20(1)/guest/mainOrderComment.png" />
+                           </image>
+                        </ImageView>
+                        <TextArea fx:id="orderComment" blendMode="MULTIPLY" focusTraversable="false" layoutX="368.0" layoutY="321.0" prefHeight="109.0" prefWidth="303.0" wrapText="true" />
+                        <Button fx:id="commitBt" blendMode="MULTIPLY" focusTraversable="false" layoutX="621.0" layoutY="465.0" mnemonicParsing="false" onAction="#commitComment" text="提交" />
+                        <TextField fx:id="orderScore" blendMode="MULTIPLY" focusTraversable="false" layoutX="381.0" layoutY="234.0" prefHeight="30.0" prefWidth="123.0" />
+                        <Label layoutX="536.0" layoutY="239.0" text="  （0-5）" />
+                     </children>
+                  </Pane>
+                  <Button blendMode="MULTIPLY" focusTraversable="false" layoutX="21.0" layoutY="141.0" mnemonicParsing="false" onAction="#orderDetail" text="订单详情" />
+                  <Button blendMode="MULTIPLY" focusTraversable="false" layoutX="21.0" layoutY="201.0" mnemonicParsing="false" onAction="#openComment" text="评价订单" />
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="orderCheck" blendMode="MULTIPLY" prefHeight="601.0" prefWidth="895.0">
+         <children>
+            <ImageView fx:id="rightImage" fitHeight="601.0" fitWidth="895.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../png%20(1)/guest/mainOrderList.png" />
+               </image>
+            </ImageView>
+            <Button blendMode="MULTIPLY" layoutX="38.0" layoutY="122.0" mnemonicParsing="false" onAction="#searchAllOrder" text="所有订单" />
+            <Button blendMode="MULTIPLY" focusTraversable="false" layoutX="773.0" layoutY="122.0" mnemonicParsing="false" onAction="#orderDetail" text="查看详情" />
+            <Button blendMode="MULTIPLY" layoutX="593.0" layoutY="122.0" mnemonicParsing="false" onAction="#searchAbnormalOrder" text="异常订单" />
+            <TableView fx:id="table" blendMode="MULTIPLY" focusTraversable="false" layoutX="38.0" layoutY="167.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="386.0" prefWidth="815.0">
+               <columns>
+                  <TableColumn fx:id="orderIDColumn" prefWidth="116.0" text="订单编号" />
+                  <TableColumn fx:id="hotelNameColumn" prefWidth="133.0" text="酒店名" />
+                  <TableColumn fx:id="addressColumn" prefWidth="143.0" text="地址" />
+                  <TableColumn fx:id="checkInTimeColumn" prefWidth="143.0" text="预计入住时间" />
+                  <TableColumn fx:id="checkOutTimeColumn" prefWidth="143.0" text="预计离开时间" />
+                  <TableColumn fx:id="priceColumn" prefWidth="55.0" resizable="false" sortType="DESCENDING" text="价格" />
+                  <TableColumn fx:id="stateColumn" text="订单状态" />
+               </columns>
+            </TableView>
+            <Button fx:id="undoBt" blendMode="MULTIPLY" layoutX="698.0" layoutY="122.0" mnemonicParsing="false" onAction="#undoNormalOrder" text="撤销" />
+            <Button blendMode="MULTIPLY" layoutX="403.0" layoutY="122.0" mnemonicParsing="false" onAction="#searchUnexecutedOrder" text="未执行订单" />
+            <Button blendMode="MULTIPLY" layoutX="308.0" layoutY="122.0" mnemonicParsing="false" onAction="#searchUncommentedOrder" text="未评论订单" />
+            <Button blendMode="MULTIPLY" layoutX="498.0" layoutY="122.0" mnemonicParsing="false" onAction="#searchCancelledOrder" text="已撤销订单" />
+            <Button blendMode="MULTIPLY" layoutX="213.0" layoutY="122.0" mnemonicParsing="false" onAction="#searchCommentedOrder" text="已评论订单" />
+            <Button blendMode="MULTIPLY" layoutX="118.0" layoutY="122.0" mnemonicParsing="false" onAction="#searchExecutedOrder" text="已执行订单" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

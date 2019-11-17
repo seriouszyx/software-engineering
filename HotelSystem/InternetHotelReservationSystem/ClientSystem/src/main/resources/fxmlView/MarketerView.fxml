@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.webMarketerUI.controller.WebMarketerViewController">
+   <children>
+      <StackPane fx:id="right" layoutX="105.0" prefHeight="601.0" prefWidth="895.0">
+         <children>
+            <Pane fx:id="mainPane" prefHeight="601.0" prefWidth="895.0">
+               <children>
+                  <ImageView fx:id="rightImage" fitHeight="601.0" fitWidth="895.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+      <AnchorPane maxWidth="105.0" minHeight="601.0" minWidth="105.0" prefHeight="601.0" prefWidth="105.0">
+         <children>
+            <ImageView fx:id="leftImage" fitHeight="601.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="creditBT" fitHeight="35.0" fitWidth="105.0" layoutY="105.0" onMouseClicked="#openCharge" onMouseEntered="#enter1" onMouseExited="#exited1" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="commonBT" fitHeight="35.0" fitWidth="105.0" layoutY="185.0" onMouseClicked="#openCommonPromotion" onMouseEntered="#enter2" onMouseExited="#exited2" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="memberBT" fitHeight="35.0" fitWidth="105.0" layoutY="265.0" onMouseClicked="#openMarket" onMouseEntered="#enter3" onMouseExited="#exited3" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="cycleBT" fitHeight="35.0" fitWidth="105.0" layoutY="345.0" onMouseClicked="#openPromotion" onMouseEntered="#enter4" onMouseExited="#exited4" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="orderBT" fitHeight="35.0" fitWidth="105.0" layoutY="425.0" onMouseClicked="#openOrder" onMouseEntered="#enter5" onMouseExited="#exited5" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="signUpBT" fitHeight="35.0" fitWidth="105.0" layoutY="515.0" onMouseClicked="#logout" onMouseEntered="#enter6" onMouseExited="#exited6" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="mainBT" fitHeight="35.0" fitWidth="105.0" layoutY="555.0" onMouseClicked="#openMain" onMouseEntered="#enter7" onMouseExited="#exited7" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="ID" alignment="CENTER" focusTraversable="false" layoutY="75.0" prefHeight="29.0" prefWidth="105.0" text="ASI">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

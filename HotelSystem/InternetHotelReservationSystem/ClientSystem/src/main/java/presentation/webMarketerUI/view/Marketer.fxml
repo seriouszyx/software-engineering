@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.webMarketerUI.controller.WebMarketerViewController">
+   <children>
+      <SplitPane dividerPositions="0.1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="603.0" prefWidth="1000.0">
+         <items>
+            <AnchorPane maxWidth="100.0" minHeight="0.0" minWidth="100.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ImageView fx:id="leftImage" fitHeight="601.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button focusTraversable="false" layoutX="8.0" layoutY="530.0" mnemonicParsing="false" onMouseClicked="#openMain" prefHeight="36.0" prefWidth="80.0" text="主页" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="530.0" />
+                  <Button focusTraversable="false" layoutX="4.0" layoutY="96.0" mnemonicParsing="false" onMouseClicked="#openCharge" prefHeight="43.0" prefWidth="88.0" text="信用充值" AnchorPane.bottomAnchor="483.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="75.0" />
+                  <Button focusTraversable="false" layoutX="4.0" layoutY="234.0" mnemonicParsing="false" onMouseClicked="#openMarket" prefHeight="43.0" prefWidth="88.0" text="会员等级" AnchorPane.bottomAnchor="324.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="234.0" />
+                  <Label fx:id="ID" layoutX="22.0" layoutY="35.0" text="100001" />
+                  <Button focusTraversable="false" layoutX="4.0" layoutY="320.0" mnemonicParsing="false" onMouseClicked="#openPromotion" prefHeight="43.0" prefWidth="88.0" text="商圈策略" AnchorPane.bottomAnchor="238.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="320.0" />
+                  <Button focusTraversable="false" layoutX="4.0" layoutY="405.0" mnemonicParsing="false" onMouseClicked="#openOrder" prefHeight="43.0" prefWidth="88.0" text="异常订单" AnchorPane.bottomAnchor="153.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="405.0" />
+                  <Button focusTraversable="false" layoutX="4.0" layoutY="154.0" mnemonicParsing="false" onMouseClicked="#openCommonPromotion" prefHeight="43.0" prefWidth="88.0" text="普通策略" AnchorPane.bottomAnchor="404.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="154.0" />
+                  <Button focusTraversable="false" layoutX="8.0" layoutY="494.0" mnemonicParsing="false" onAction="#logout" prefHeight="36.0" prefWidth="80.0" text="注销" AnchorPane.bottomAnchor="71.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="494.0" />
+                  <Label layoutX="19.0" layoutY="14.0" text="营销人员" />
+               </children>
+            </AnchorPane>
+            <StackPane fx:id="right" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Pane fx:id="mainPane" prefHeight="601.0" prefWidth="895.0">
+                     <children>
+                        <ImageView fx:id="rightImage" fitHeight="601.0" fitWidth="895.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="417.0" layoutY="277.0" text="ASI">
+                           <font>
+                              <Font size="41.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+         </items>
+      </SplitPane>
+   </children>
+</Pane>

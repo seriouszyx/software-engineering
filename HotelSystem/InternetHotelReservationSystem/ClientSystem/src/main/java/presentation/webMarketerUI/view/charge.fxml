@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="895.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.webMarketerUI.controller.ChargeController">
+   <children>
+      <ImageView fx:id="rightImage" fitHeight="601.0" fitWidth="895.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="601.0" prefWidth="895.0">
+         <children>
+            <Label layoutX="402.0" layoutY="14.0" text="信用充值" AnchorPane.topAnchor="14.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Separator layoutY="60.0" prefHeight="3.0" prefWidth="895.0" />
+            <GridPane layoutX="294.0" layoutY="90.0" prefHeight="46.0" prefWidth="308.0">
+               <children>
+                  <Label prefHeight="51.0" prefWidth="86.0" text="客户编号：" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+                  <TextField fx:id="searchGuestID" focusTraversable="false" prefHeight="30.0" prefWidth="0.0" GridPane.columnIndex="1" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="123.0" minWidth="10.0" prefWidth="85.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="206.0" minWidth="10.0" prefWidth="198.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <Button fx:id="searchBtn" focusTraversable="false" layoutX="579.0" layoutY="146.0" mnemonicParsing="false" onAction="#search" text="查询" />
+            <Pane fx:id="chargePane" layoutX="269.0" layoutY="186.0" prefHeight="361.0" prefWidth="358.0" visible="false">
+               <children>
+                  <GridPane layoutX="75.0" layoutY="59.0" prefHeight="161.0" prefWidth="226.0">
+                     <children>
+                        <Label prefHeight="54.0" prefWidth="210.0" text="信 用 值：" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.rowIndex="2" />
+                        <Label prefHeight="51.0" prefWidth="86.0" text="客户编号：" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+                        <Label prefHeight="54.0" prefWidth="210.0" text="客户姓名：" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.rowIndex="1" />
+                        <Label fx:id="name" prefHeight="54.0" prefWidth="210.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="credit" prefHeight="39.0" prefWidth="103.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label prefHeight="54.0" prefWidth="210.0" text="充值额度：" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" GridPane.rowIndex="3" />
+                        <TextField fx:id="chargeNum" prefHeight="23.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="guestID" prefHeight="42.0" prefWidth="119.0" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="1" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="123.0" minWidth="10.0" prefWidth="93.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="118.0" minWidth="10.0" prefWidth="117.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="53.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <Button layoutX="104.0" layoutY="255.0" mnemonicParsing="false" onAction="#cancelCharge" text="返回" />
+                  <Button layoutX="212.0" layoutY="255.0" mnemonicParsing="false" onAction="#saveCharge" text="充值" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
