@@ -11,5 +11,6 @@
     <file url="file://$PROJECT_DIR$/step4_sentiments/train_model/dic/pda/pos.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/step4_sentiments/train_model/dic/shampoo/neg.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/step4_sentiments/train_model/dic/shampoo/pos.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/step5_LDA/log/info.log" charset="GBK" />
   </component>
 </project>

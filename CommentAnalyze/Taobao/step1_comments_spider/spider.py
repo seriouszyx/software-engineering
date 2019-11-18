@@ -40,7 +40,7 @@ def comment_spider(page):
                 YtarIAgvcr5YVa9Y1Q%3D%3D; _tb_token_=3e45763558e83; l=cBxHgk7eqOJTNC2vBOfwZuI8Ld7t1IObzxVzw4OGuICPOr \
                 1XXRk1WZ3IWa8WCnhVL6kpJ3WHB0HYBlLEGPathZXRFJXn9MpO.; isg=BHp6goVz88ilJH-cowcAz6x5y6Bcg_90kuhhVoRyQo2 \
                 JdxixbbrZFyfBxkMOVXad'}
-    url = 'https://rate.tmall.com/list_detail_rate.htm?itemId=543263803346&spuId=715912561&sellerId=1714128138&order \
+    url = 'https://rate.tmall.com/list_detail_rate.htm?itemId=603330883901&spuId=1351702554&sellerId=2838892713&order \
             =3&currentPage=%s' % page
     res = requests.get(url, headers=header)
     # 截取json数据字符串
@@ -58,7 +58,7 @@ def main():
     # 判断括号里的文件是否存在,存在则清除
     if os.path.exists(tao_bao_comments):
         os.remove(tao_bao_comments)
-    for page in range(1, 11):
+    for page in range(1, 50):
         comment_spider(page)
         time.sleep(random.random() * 5)
 
